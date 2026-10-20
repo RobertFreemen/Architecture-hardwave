@@ -2,5 +2,6 @@
 
 ## Навигация
 
+- [Конспект Алгебра высказываний](/сconspectalgebraviskaziv.md)
 - [Задание 1](/markdown.md)
 
