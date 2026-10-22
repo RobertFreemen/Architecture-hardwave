@@ -31,6 +31,8 @@ $(X>4)$ v $\overline{(X>1)}$ v $(X>4)$ при $X = 4$
 Логическая формула:
 $(A \wedge B) \rightarrow C$
 
+**Ответ:** $(A \wedge B) \rightarrow C$
+
 ---
 
 ## Задание 3
@@ -53,3 +55,5 @@ $\overline{(\overline{X} \wedge \overline{(Y \vee Z)})} \vee ((\overline{X} \rig
 | 1 | 0 | 1 | **1** |
 | 1 | 1 | 0 | **1** |
 | 1 | 1 | 1 | **1** |
+
+**Ответ:** $X \vee Y \vee Z$
