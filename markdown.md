@@ -32,12 +32,13 @@ $(X>4)$ v $\overline{(X>1)}$ v $(X>4)$ при $X = 4$
 
 ## Задание 3
 
-$$ \overline{(\overline{X} \wedge \overline{(Y \vee Z)})} \vee ((\overline{X} \rightarrow \overline{\overline{Y}}) \vee Z) $$
+$\overline{(\overline{X} \wedge \overline{(Y \vee Z)})} \vee ((\overline{X} \rightarrow \overline{\overline{Y}}) \vee Z)$
 
-- $$ \overline{(\overline{X} \wedge \overline{(Y \vee Z)})} = X \vee Y \vee Z $$
-- $$ (\overline{X} \rightarrow Y) \vee Z = X \vee Y \vee Z $$
+- $\overline{(\overline{X} \wedge \overline{(Y \vee Z)})} = X \vee Y \vee Z$
 
-- $$ (X \vee Y \vee Z) \vee (X \vee Y \vee Z) = X \vee Y \vee Z $$
+- $(\overline{X} \rightarrow Y) \vee Z = X \vee Y \vee Z$
+
+- $(X \vee Y \vee Z) \vee (X \vee Y \vee Z) = X \vee Y \vee Z$
 
 | X | Y | Z | F |
 | :---: | :---: | :---: | :---: |
