@@ -156,6 +156,7 @@ $$ ((\overline{X} \leftrightarrow \overline{Y}) \rightarrow (\overline{Y} \right
 ## Решение по методике преподавателя
 
 Выполним упрощение логического выражения, используя главное правило раскрытия импликации с доски:
+
 $$ A \rightarrow B \equiv \overline{A} \lor B $$
 
 ### 1. Предварительное раскрытие базовых импликаций:
@@ -172,12 +173,15 @@ $$ X \lor \overline{Y} \lor \overline{X} \lor \overline{Y} $$
 
 ### 3. Упрощение по закону исключенного третьего:
 Группируем элементы $X$ и $\overline{X}$:
+
 $$ (X \lor \overline{X}) \lor \overline{Y} $$
 
 По закону исключенного третьего пара $X \lor \overline{X}$ всегда дает единицу ($1$):
+
 $$ X \lor \overline{X} = 1 $$
 
 Получаем выражение:
+
 $$ 1 \lor \overline{Y} $$
 
 $$ 1 \lor \overline{Y} = 1 $$
