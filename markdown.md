@@ -91,8 +91,6 @@ $$ F = X \vee 1 \equiv 1 $$
 | 1 | 1 | 0 | **1** |
 | 1 | 1 | 1 | **1** |
 
-**Ответ:** $X \vee Y \vee Z$
-
 - [Схема задания 3](https://www.falstad.com/s.py?s=n2qntH)
 - [Taблица Excel](/excel/Таблица.xlsx)
 
@@ -142,3 +140,5 @@ $$ 0 \vee (\overline{A} \wedge \overline{B}) = \overline{A} \wedge \overline{B} 
 | 0 | 1 | 0 |
 | 1 | 0 | 0 |
 | 1 | 1 | 0 |
+
+- [Таблица Excel](/excel/Таблица%20задание%204.xlsx)
