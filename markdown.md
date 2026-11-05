@@ -173,8 +173,9 @@ $$ X \lor \overline{Y} \lor \overline{X} \lor \overline{Y} $$
 Группируем элементы $X$ и $\overline{X}$:
 $$ (X \lor \overline{X}) \lor \overline{Y} $$
 
- $X \lor \overline{X}$ всегда дает тождественную единицу ($1$):
-  $$ X \lor \overline{X} = 1 $$
+$X \lor \overline{X}$ всегда дает тождественную единицу ($1$):
+
+$$ X \lor \overline{X} = 1 $$
 
 Получаем выражение:
 $$ 1 \lor \overline{Y} $$
