@@ -73,7 +73,7 @@ $$ F = X \vee (Y \vee Z) \vee \overline{(Y \vee Z)} $$
 По закону исключенного третьего выражение $(Y \vee Z) \vee \overline{(Y \vee Z)} \equiv 1$. Следовательно:
 $$ F = X \vee 1 \equiv 1 $$
 
-**Ответ:** ы($F = 1$).
+**Ответ:** ($F = 1$).
 
 
 ### Таблица истинности (скрипт расчета)
@@ -95,3 +95,50 @@ $$ F = X \vee 1 \equiv 1 $$
 
 - [Схема задания 3](https://www.falstad.com/s.py?s=n2qntH)
 - [Taблица Excel](/excel/Таблица.xlsx)
+
+---
+
+## Задание 4
+
+**Исходное логическое выражение:**
+
+$$ \overline{(\overline{A} \wedge B)} \wedge \overline{(B \vee A)} $$
+
+---
+
+## Решение по методике преподавателя
+
+### 1. Преобразование первой части выражения по закону де Моргана:
+
+$$ \overline{\overline{A} \wedge B} = \overline{\overline{A}} \vee \overline{B} = A \vee \overline{B} $$
+
+### 2. Преобразование второй части выражения по закону де Моргана:
+
+$$ \overline{B \vee A} = \overline{B} \wedge \overline{A} = \overline{A} \wedge \overline{B} $$
+
+### 3. Финальное перемножение (конъюнкция) двух частей:
+
+$$ (A \vee \overline{B}) \wedge (\overline{A} \wedge \overline{B}) $$
+
+$$ (A \wedge \overline{A} \wedge \overline{B}) \vee (\overline{B} \wedge \overline{A} \wedge \overline{B}) $$
+
+Упрощаем полученные слагаемые:
+* В первой скобке элемент $A \wedge \overline{A}$ равен $0$:
+  $$ 0 \wedge \overline{B} = 0 $$
+* Во второй скобке повторяющийся элемент $\overline{B} \wedge \overline{B}$ равен просто $\overline{B}$:
+  $$ \overline{B} \wedge \overline{A} = \overline{A} \wedge \overline{B} $$
+
+$$ 0 \vee (\overline{A} \wedge \overline{B}) = \overline{A} \wedge \overline{B} $$
+
+**Ответ:** $\overline{A} \wedge \overline{B}$
+
+---
+
+### Таблица истинности для Задания 4
+
+| A | B | F |
+|:-:|:-:|:-:|
+| 0 | 0 | 1 |
+| 0 | 1 | 0 |
+| 1 | 0 | 0 |
+| 1 | 1 | 0 |
