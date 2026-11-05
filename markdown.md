@@ -73,10 +73,10 @@ $$ F = X \vee (Y \vee Z) \vee \overline{(Y \vee Z)} $$
 По закону исключенного третьего выражение $(Y \vee Z) \vee \overline{(Y \vee Z)} \equiv 1$. Следовательно:
 $$ F = X \vee 1 \equiv 1 $$
 
-**Ответ:** ($F = 1$).
+**Ответ:** $F = 1$
 
 
-### Таблица истинности (скрипт расчета)
+### Таблица истинности
 
 
 
@@ -132,7 +132,7 @@ $$ 0 \vee (\overline{A} \wedge \overline{B}) = \overline{A} \wedge \overline{B} 
 
 ---
 
-### Таблица истинности для Задания 4
+### Таблица истинности
 
 | A | B | F |
 |:-:|:-:|:-:|
@@ -142,3 +142,51 @@ $$ 0 \vee (\overline{A} \wedge \overline{B}) = \overline{A} \wedge \overline{B} 
 | 1 | 1 | 0 |
 
 - [Таблица Excel](/excel/Таблица%20задание%204.xlsx) 
+
+---
+
+## Задание 5
+
+## Задание 5
+
+**Исходное логическое выражение:**
+
+$$ ((\overline{X} \leftrightarrow \overline{Y}) \rightarrow (\overline{Y} \rightarrow \overline{X})) \lor (X \land \overline{Y}) $$
+
+---
+
+$$ A \rightarrow B \equiv \overline{A} \lor B $$
+
+### 1. Предварительное раскрытие базовых импликаций:
+
+  $$ \overline{X} \rightarrow \overline{Y} \equiv X \lor \overline{Y} $$
+
+  $$ Y \rightarrow X \equiv \overline{Y} \lor X $$
+
+  $$ X \rightarrow \overline{Y} \equiv \overline{X} \lor \overline{Y} $$
+
+### 2. Преобразование левой части выражения:
+
+$$ X \lor \overline{Y} \lor \overline{X} \lor \overline{Y} $$
+
+### 3. Упрощение по закону исключенного третьего:
+Группируем элементы $X$ и $\overline{X}$:
+$$ (X \lor \overline{X}) \lor \overline{Y} $$
+
+ $X \lor \overline{X}$ всегда дает тождественную единицу ($1$):
+  $$ X \lor \overline{X} = 1 $$
+
+Получаем выражение:
+$$ 1 \lor \overline{Y} $$
+
+$$ 1 \lor \overline{Y} = 1 $$
+
+### 4. Финальный результат:
+
+$$ 1 \lor (X \land \overline{Y}) = 1 $$
+
+**Ответ:** $F = 1$
+
+---
+
+### Таблица истинности
