@@ -122,14 +122,6 @@ $$ (A \wedge \overline{A} \wedge \overline{B}) \vee (\overline{B} \wedge \overli
 
 Упрощаем полученные слагаемые:
 
-$A \wedge \overline{A}$ равен $0$:
-
-$$ 0 \wedge \overline{B} = 0 $$
-
-$\overline{B} \wedge \overline{B}$ равен просто $\overline{B}$:
-
-$$ \overline{B} \wedge \overline{A} = \overline{A} \wedge \overline{B} $$
-
 $$ 0 \vee (\overline{A} \wedge \overline{B}) = \overline{A} \wedge \overline{B} $$
 
 **Ответ:** $\overline{A} \wedge \overline{B}$
