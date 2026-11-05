@@ -67,10 +67,13 @@ $$ \overline{(\overline{X} \wedge (Y \vee Z))} \vee ((\overline{X} \rightarrow \
 
 ### 3. Финальный результат
 Соединяем упрощенную левую и правую части через внешнее **ИЛИ ($\vee$)**:
+
 $$ F = X \vee \overline{(Y \vee Z)} \vee X \vee Y \vee Z $$
+
 $$ F = X \vee (Y \vee Z) \vee \overline{(Y \vee Z)} $$
 
 По закону исключенного третьего выражение $(Y \vee Z) \vee \overline{(Y \vee Z)} \equiv 1$. Следовательно:
+
 $$ F = X \vee 1 \equiv 1 $$
 
 **Ответ:** $F = 1$
