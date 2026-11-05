@@ -121,11 +121,12 @@ $$ (A \vee \overline{B}) \wedge (\overline{A} \wedge \overline{B}) $$
 $$ (A \wedge \overline{A} \wedge \overline{B}) \vee (\overline{B} \wedge \overline{A} \wedge \overline{B}) $$
 
 Упрощаем полученные слагаемые:
-* В первой скобке элемент $A \wedge \overline{A}$ равен $0$:
+
+$A \wedge \overline{A}$ равен $0$:
 
 $$ 0 \wedge \overline{B} = 0 $$
 
-* Во второй скобке повторяющийся элемент $\overline{B} \wedge \overline{B}$ равен просто $\overline{B}$:
+$\overline{B} \wedge \overline{B}$ равен просто $\overline{B}$:
 
 $$ \overline{B} \wedge \overline{A} = \overline{A} \wedge \overline{B} $$
 
