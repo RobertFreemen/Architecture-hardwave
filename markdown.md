@@ -37,13 +37,48 @@ $(A \wedge B) \rightarrow C$
 
 ## Задание 3
 
-$\overline{(\overline{X} \wedge \overline{(Y \vee Z)})} \vee ((\overline{X} \rightarrow \overline{\overline{Y}}) \vee Z)$
+**Исходное логическое выражение:**
 
-- $\overline{(\overline{X} \wedge \overline{(Y \vee Z)})} = X \vee Y \vee Z$
+$$ \overline{(\overline{X} \wedge (Y \vee Z))} \vee ((\overline{X} \rightarrow \overline{\overline{Y}}) \vee Z) $$
 
-- $(\overline{X} \rightarrow Y) \vee Z = X \vee Y \vee Z$
+---
 
-- $(X \vee Y \vee Z) \vee (X \vee Y \vee Z) = X \vee Y \vee Z$
+### 1. Преобразование левой части выражения
+  $$ \overline{\overline{X} \wedge (Y \vee Z)} $$
+
+  $$ \overline{\overline{X}} \vee \overline{(Y \vee Z)} $$
+
+  $$ X \vee \overline{(Y \vee Z)} $$
+ 
+  $$ X \vee (\overline{Y} \wedge \overline{Z}) $$
+
+  $$ (X \vee \overline{Y}) \wedge (X \vee \overline{Z}) $$
+
+### 2. Преобразование правой части выражения
+Упростим вторую часть выражения, используя правила раскрытия импликации ($A \rightarrow B \equiv \overline{A} \vee B$) и снятие двойного отрицания ($\overline{\overline{Y}} \equiv Y$):
+
+  $$ (\overline{X} \rightarrow \overline{\overline{Y}}) \vee Z $$
+
+  $$ (\overline{X} \rightarrow Y) \vee Z $$
+
+  $$ (\overline{\overline{X}} \vee Y) \vee Z $$
+
+  $$ X \vee Y \vee Z $$
+
+### 3. Объединение и минимизация
+Соединяем упрощенную левую и правую части через внешнее **ИЛИ ($\vee$)**:
+$$ F = X \vee \overline{(Y \vee Z)} \vee X \vee Y \vee Z $$
+$$ F = X \vee (Y \vee Z) \vee \overline{(Y \vee Z)} $$
+
+По закону исключенного третьего выражение $(Y \vee Z) \vee \overline{(Y \vee Z)} \equiv 1$. Следовательно:
+$$ F = X \vee 1 \equiv 1 $$
+
+**Ответ:** ы($F = 1$).
+
+
+### Таблица истинности (скрипт расчета)
+
+
 
 | X | Y | Z | F |
 | :---: | :---: | :---: | :---: |
