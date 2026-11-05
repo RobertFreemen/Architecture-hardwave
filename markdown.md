@@ -92,3 +92,6 @@ $$ F = X \vee 1 \equiv 1 $$
 | 1 | 1 | 1 | **1** |
 
 **Ответ:** $X \vee Y \vee Z$
+
+- [Схема задания 3](https://www.falstad.com/s.py?s=n2qntH)
+- [Taблица Excel](/excel/Таблица.xlsx)
