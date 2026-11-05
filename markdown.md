@@ -171,15 +171,14 @@ $$ A \rightarrow B \equiv \overline{A} \lor B $$
 $$ X \lor \overline{Y} \lor \overline{X} \lor \overline{Y} $$
 
 ### 3. Упрощение по закону исключенного третьего:
-Группируем элементы $X$ и $\overline{X}$:
+
+$X$ и $\overline{X}$:
 
 $$ (X \lor \overline{X}) \lor \overline{Y} $$
 
-По закону исключенного третьего пара $X \lor \overline{X}$ всегда дает единицу ($1$):
+$X \lor \overline{X}$ всегда дает единицу ($1$):
 
 $$ X \lor \overline{X} = 1 $$
-
-Получаем выражение:
 
 $$ 1 \lor \overline{Y} $$
 
