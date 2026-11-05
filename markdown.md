@@ -102,9 +102,6 @@ $$ F = X \vee 1 \equiv 1 $$
 
 $$ \overline{(\overline{A} \wedge B)} \wedge \overline{(B \vee A)} $$
 
----
-
-## Решение по методике преподавателя
 
 ### 1. Преобразование первой части выражения по закону де Моргана:
 
@@ -141,4 +138,4 @@ $$ 0 \vee (\overline{A} \wedge \overline{B}) = \overline{A} \wedge \overline{B} 
 | 1 | 0 | 0 |
 | 1 | 1 | 0 |
 
-- [Таблица Excel](/excel/Таблица%20задание%204.xlsx)
+- [Таблица Excel](/excel/Таблица%20задание%204.xlsx) 
