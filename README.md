@@ -6,4 +6,4 @@
 - [Конспект Алгебра высказываний](/сconspectalgebraviskaziv.md)
 - [Задания](/markdown.md)
 - [Taблица Excel](/excel/Таблица.xlsx)
-
+- [Схема задания 3](/https://www.falstad.com/s.py?s=n2qntH)
