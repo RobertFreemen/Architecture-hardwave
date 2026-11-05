@@ -65,7 +65,7 @@ $$ \overline{(\overline{X} \wedge (Y \vee Z))} \vee ((\overline{X} \rightarrow \
 
   $$ X \vee Y \vee Z $$
 
-### 3. Объединение и минимизация
+### 3. Финальный результат
 Соединяем упрощенную левую и правую части через внешнее **ИЛИ ($\vee$)**:
 $$ F = X \vee \overline{(Y \vee Z)} \vee X \vee Y \vee Z $$
 $$ F = X \vee (Y \vee Z) \vee \overline{(Y \vee Z)} $$
@@ -111,7 +111,7 @@ $$ \overline{\overline{A} \wedge B} = \overline{\overline{A}} \vee \overline{B} 
 
 $$ \overline{B \vee A} = \overline{B} \wedge \overline{A} = \overline{A} \wedge \overline{B} $$
 
-### 3. Финальное перемножение (конъюнкция) двух частей:
+### 3. Финальный результат
 
 $$ (A \vee \overline{B}) \wedge (\overline{A} \wedge \overline{B}) $$
 
@@ -147,18 +147,19 @@ $$ 0 \vee (\overline{A} \wedge \overline{B}) = \overline{A} \wedge \overline{B} 
 
 ## Задание 5
 
-## Задание 5
-
 **Исходное логическое выражение:**
 
 $$ ((\overline{X} \leftrightarrow \overline{Y}) \rightarrow (\overline{Y} \rightarrow \overline{X})) \lor (X \land \overline{Y}) $$
 
 ---
 
+## Решение по методике преподавателя
+
+Выполним упрощение логического выражения, используя главное правило раскрытия импликации с доски:
 $$ A \rightarrow B \equiv \overline{A} \lor B $$
 
 ### 1. Предварительное раскрытие базовых импликаций:
-
+ 
   $$ \overline{X} \rightarrow \overline{Y} \equiv X \lor \overline{Y} $$
 
   $$ Y \rightarrow X \equiv \overline{Y} \lor X $$
@@ -173,8 +174,7 @@ $$ X \lor \overline{Y} \lor \overline{X} \lor \overline{Y} $$
 Группируем элементы $X$ и $\overline{X}$:
 $$ (X \lor \overline{X}) \lor \overline{Y} $$
 
-$X \lor \overline{X}$ всегда дает тождественную единицу ($1$):
-
+По закону исключенного третьего пара $X \lor \overline{X}$ всегда дает единицу ($1$):
 $$ X \lor \overline{X} = 1 $$
 
 Получаем выражение:
@@ -191,3 +191,10 @@ $$ 1 \lor (X \land \overline{Y}) = 1 $$
 ---
 
 ### Таблица истинности
+
+| X | Y | F |
+| :-: | :-: | :-: |
+| 0 | 0 | 1 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 1 | 1 | 1 |
