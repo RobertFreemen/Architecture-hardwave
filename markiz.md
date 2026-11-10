@@ -15,7 +15,9 @@ $$ x' \cdot y' \cdot z' = \overline{x \vee y \vee z} $$
 
 $$ f(x, y, z) = \overline{(x \vee y \vee z)} \oplus (x \cdot y \cdot z) $$
 
-3. Раскроем сложение по модулю 2 ($A \oplus B = (A \cdot B') \vee (A' \cdot B)$):
+3. Раскроем сложение по модулю 2 
+
+($A \oplus B = (A \cdot B') \vee (A' \cdot B)$):
 
 $$ f(x, y, z) = \big(\overline{(x \vee y \vee z)} \cdot (x \cdot y \cdot z)'\big) \vee \big((x \vee y \vee z) \cdot (x \cdot y \cdot z)\big) $$
 
