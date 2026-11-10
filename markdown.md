@@ -37,47 +37,43 @@ $(A \wedge B) \rightarrow C$
 
 ## Задание 3
 
-**Исходное логическое выражение:**
+**Исходное логическое выражение (с общим отрицанием):**
 
-$$ \overline{(\overline{X} \wedge (Y \vee Z))} \vee ((\overline{X} \rightarrow \overline{\overline{Y}}) \vee Z) $$
+$$ \overline{\overline{(\overline{X} \wedge (Y \vee Z))} \vee ((\overline{X} \rightarrow \overline{\overline{Y}}) \vee Z)} $$
 
----
 
 ### 1. Преобразование левой части выражения
-  $$ \overline{\overline{X} \wedge (Y \vee Z)} $$
+Применим закон де Моргана ($\overline{A \wedge B} \equiv \overline{A} \vee \overline{B}$) и закон двойного отрицания ($\overline{\overline{A}} \equiv A$):
 
-  $$ \overline{\overline{X}} \vee \overline{(Y \vee Z)} $$
+$$ \overline{\overline{X} \wedge (Y \vee Z)} $$
 
-  $$ X \vee \overline{(Y \vee Z)} $$
- 
-  $$ X \vee (\overline{Y} \wedge \overline{Z}) $$
+$$ \overline{\overline{X}} \vee \overline{(Y \vee Z)} $$
 
-  $$ (X \vee \overline{Y}) \wedge (X \vee \overline{Z}) $$
+$$ X \vee \overline{(Y \vee Z)} $$
 
 ### 2. Преобразование правой части выражения
 Упростим вторую часть выражения, используя правила раскрытия импликации ($A \rightarrow B \equiv \overline{A} \vee B$) и снятие двойного отрицания ($\overline{\overline{Y}} \equiv Y$):
 
-  $$ (\overline{X} \rightarrow \overline{\overline{Y}}) \vee Z $$
+$$ (\overline{X} \rightarrow \overline{\overline{Y}}) \vee Z $$
 
-  $$ (\overline{X} \rightarrow Y) \vee Z $$
+$$ (\overline{X} \rightarrow Y) \vee Z $$
 
-  $$ (\overline{\overline{X}} \vee Y) \vee Z $$
+$$ (\overline{\overline{X}} \vee Y) \vee Z $$
 
-  $$ X \vee Y \vee Z $$
+$$ X \vee Y \vee Z $$
 
 ### 3. Финальный результат
-Соединяем упрощенную левую и правую части через внешнее **ИЛИ ($\vee$)**:
+Соединяем упрощенную левую и правую части через внутреннее **ИЛИ ($\vee$)** под общим отрицанием:
 
-$$ F = X \vee \overline{(Y \vee Z)} \vee X \vee Y \vee Z $$
+$$ F = \overline{X \vee \overline{(Y \vee Z)} \vee X \vee Y \vee Z} $$
 
-$$ F = X \vee (Y \vee Z) \vee \overline{(Y \vee Z)} $$
+$$ F = \overline{X \vee (Y \vee Z) \vee \overline{(Y \vee Z)}} $$
 
 По закону исключенного третьего выражение $(Y \vee Z) \vee \overline{(Y \vee Z)} \equiv 1$. Следовательно:
 
-$$ F = X \vee 1 \equiv 1 $$
+$$ F = \overline{X \vee 1} = \overline{1} \equiv 0 $$
 
-**Ответ:** $F = 1$
-
+**Ответ:** $F = 0$
 
 ### Таблица истинности
 
