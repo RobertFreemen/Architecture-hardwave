@@ -137,6 +137,7 @@ $$ 0 \vee (\overline{A} \wedge \overline{B}) = \overline{A} \wedge \overline{B} 
 | 1 | 0 | 0 |
 | 1 | 1 | 0 |
 
+- [Схема задания 4](https://www.falstad.com/s.py?s=ZScdDm)
 - [Таблица Excel](/excel/Таблица%20задание%204.xlsx) 
 
 ---
